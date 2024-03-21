@@ -1,0 +1,91 @@
+```{=html}
+<style>
+  body{text-align: justify}
+</style>
+```
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+# Métrica dos Grafos
+## Introdução
+
+Serão apresentados as principais métricas relacionadas a redes complexas e suas aplicações, os principais mais simples e algumas métricas utilizadas por algoritmos variados.
+
+
+## Ordem 
+
+Representa o número de vértices ou nós de um grafo. È o número de elementos em **V**, para um grafo **G(V,E)**
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+## Tamanho
+
+Representa o número de aresta ou conexões entre vértices de um grafo. È o número de elementos em **E**, para um grafo **G(V,E)**. 
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+## Diâmetro
+
+A maior distância geodésica no grafo, ou seja, o maior dos menores caminhos entre cada par de vértices de um grafo. Para cada par de vértices existe um caminho mínimo, ou um número de saltos, necessários para ir de um vértice **X** a um vértice **Y**. Computados todos os caminhos mínimos para todos os vértices de um grafo, o maior deles corresponderá ao diâmetro do grafo.
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Grau de um Vértice
+
+O grau de um vértice diz respeito ao número de conexões que esse vértice tem. É possível classificar o grau de um vértice simplesmente como o grau ou **degree** para grafos não direcionados e, para grafos direcionados, como grau de entrada (**indegree**) e grau de saída (**outdegree**). Usualmente é representado como **Deg(v)**.
+
+Grau de entrada ou indegree se refere ao número de conexões que um vértice recebe. Analogamente, pode-se tomar como exemplo o número de mensagens que um usuário recebe de outros usuários em uma rede social.
+
+Grau de saída ou outdegree se refere ao número de conexões que um vértice faz, ou quais conexões se originam desse vértice. Utilizando o mesmo exemplo de traca de mensagens em uma rede social, pode-se considerar como outdegree as mensagens enviadas por um determinado usuário.
+
+Pode haver, ainda, grafos mistos em que algumas das conexões são direcionadas e outras não; essa é uma configuração incomum, porém possível.
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Densidade
+
+
+A densidade de ummgrafo é dada pela relação entre sua ordem e seu tamanho. A densidade de um grafo **G=(V,E)** mede quantas arestas existem no conjunto **E** em comparação como o número máximo possível de arestas entre vértices no conjunto **V**. 
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Centralidade
+
+Existem diversas medidas de centralidade para os vértices, e elas procuram avaliar a importância de um determinado vértice em relação ao grafo. Em análise de redes sociais, é importante conhecer os nós centrais da rede, pois são estes que mais influenciam a propagação de informação. Medidas de centralidade também são importantes para determinar o fluxo em redes de transporte, mercado financeiro, dentre muitas outras aplicações.
+
+
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::

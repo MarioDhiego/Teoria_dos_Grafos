@@ -61,5 +61,54 @@
     "title": "2  Modelos de Redes Complexas",
     "section": "2.4 Modelo proposto por Watts e Strogatz",
     "text": "2.4 Modelo proposto por Watts e Strogatz\nDuncan J. watts e Steven H. Strogatz propuseram um método para a criação de redes complexas aleatórias com características do fenômeno do mundo pequeno. Este modelo de redes se caracteriza pela presença de clusters (grupos) e por caminhos entre os vértices.\nEste modelo de rede tem similaridade com o modelo proposto por Erdos e Rényi, mas se diferencia por gerar tríades - grupos de três vértices em que todos estão conectados -, fazendo com que o coeficiente de clusterização desde modelo sela maior. As redes formadas segundo o modelo de Watts-Strogatz são mais próximas das redes do mundo real, emulando suas propriedades."
+  },
+  {
+    "objectID": "metrica.html#introdução",
+    "href": "metrica.html#introdução",
+    "title": "3  Métrica dos Grafos",
+    "section": "3.1 Introdução",
+    "text": "3.1 Introdução\nSerão apresentados as principais métricas relacionadas a redes complexas e suas aplicações, os principais mais simples e algumas métricas utilizadas por algoritmos variados."
+  },
+  {
+    "objectID": "metrica.html#ordem",
+    "href": "metrica.html#ordem",
+    "title": "3  Métrica dos Grafos",
+    "section": "3.2 Ordem",
+    "text": "3.2 Ordem\nRepresenta o número de vértices ou nós de um grafo. È o número de elementos em V, para um grafo G(V,E)"
+  },
+  {
+    "objectID": "metrica.html#tamanho",
+    "href": "metrica.html#tamanho",
+    "title": "3  Métrica dos Grafos",
+    "section": "3.3 Tamanho",
+    "text": "3.3 Tamanho\nRepresenta o número de aresta ou conexões entre vértices de um grafo. È o número de elementos em E, para um grafo G(V,E)."
+  },
+  {
+    "objectID": "metrica.html#diâmetro",
+    "href": "metrica.html#diâmetro",
+    "title": "3  Métrica dos Grafos",
+    "section": "3.4 Diâmetro",
+    "text": "3.4 Diâmetro\nA maior distância geodésica no grafo, ou seja, o maior dos menores caminhos entre cada par de vértices de um grafo. Para cada par de vértices existe um caminho mínimo, ou um número de saltos, necessários para ir de um vértice X a um vértice Y. Computados todos os caminhos mínimos para todos os vértices de um grafo, o maior deles corresponderá ao diâmetro do grafo."
+  },
+  {
+    "objectID": "metrica.html#grau-de-um-vértice",
+    "href": "metrica.html#grau-de-um-vértice",
+    "title": "3  Métrica dos Grafos",
+    "section": "3.5 Grau de um Vértice",
+    "text": "3.5 Grau de um Vértice\nO grau de um vértice diz respeito ao número de conexões que esse vértice tem. É possível classificar o grau de um vértice simplesmente como o grau ou degree para grafos não direcionados e, para grafos direcionados, como grau de entrada (indegree) e grau de saída (outdegree). Usualmente é representado como Deg(v).\nGrau de entrada ou indegree se refere ao número de conexões que um vértice recebe. Analogamente, pode-se tomar como exemplo o número de mensagens que um usuário recebe de outros usuários em uma rede social.\nGrau de saída ou outdegree se refere ao número de conexões que um vértice faz, ou quais conexões se originam desse vértice. Utilizando o mesmo exemplo de traca de mensagens em uma rede social, pode-se considerar como outdegree as mensagens enviadas por um determinado usuário.\nPode haver, ainda, grafos mistos em que algumas das conexões são direcionadas e outras não; essa é uma configuração incomum, porém possível."
+  },
+  {
+    "objectID": "metrica.html#densidade",
+    "href": "metrica.html#densidade",
+    "title": "3  Métrica dos Grafos",
+    "section": "3.6 Densidade",
+    "text": "3.6 Densidade\nA densidade de ummgrafo é dada pela relação entre sua ordem e seu tamanho. A densidade de um grafo G=(V,E) mede quantas arestas existem no conjunto E em comparação como o número máximo possível de arestas entre vértices no conjunto V."
+  },
+  {
+    "objectID": "metrica.html#centralidade",
+    "href": "metrica.html#centralidade",
+    "title": "3  Métrica dos Grafos",
+    "section": "3.7 Centralidade",
+    "text": "3.7 Centralidade\nExistem diversas medidas de centralidade para os vértices, e elas procuram avaliar a importância de um determinado vértice em relação ao grafo. Em análise de redes sociais, é importante conhecer os nós centrais da rede, pois são estes que mais influenciam a propagação de informação. Medidas de centralidade também são importantes para determinar o fluxo em redes de transporte, mercado financeiro, dentre muitas outras aplicações."
   }
 ]
