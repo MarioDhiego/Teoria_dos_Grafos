@@ -1,0 +1,61 @@
+```{=html}
+<style>
+body{text-align: justify}
+</style>
+```
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+# Introdução a Teoria dos Grafos
+## Contextualização Histórica
+
+A teoria dos grafos é um ramo da matemática que estuda as estruturas conhecidas como grafos. **Leonhard Euler**, um brilhante matemático, publicou e, 1736 um artigo relacionado à resolução do problema das sete pontes de Konigsberg. Embora Eulernão tenha utilizado uma abordagem computacional para a resolução do problema, ele estabeleceu a base da teoria que deu origem ao estudo dos grafos e das redes complexas.
+
+Ao estudar e análise de redes sociais, você irá se deparar com diversos termos relacionados ao tema, um mar vasto de materiais formulados para a area de marketing e propaganda permeados de termos em inglês, um grande número de artigos, livros e tutoriais da área da computação igualmente carregados de termos, nomes de algritmos, modelos de rede e conceitos matemáticos. 
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Rede Complexa
+
+Uma rede complexa é caracterizada pela presença de elementos não triviais. È uma distribuição de graus dos vértices que comumente segue uma lei de potência e tem a presença de grupos de vértices fortemente conectados formando clusters de vértices.
+
+Redes complexas podem apresentar dados de diversas áreas, tais como biologia, neurociência, química e também redes sociais. O termo **rede complexa** será utilizado em diversos momento nesta apostila. È importante compreender que nem toda rede complexa é uma rede social, e que redes sociais que representam grupos pequenos de indivíduos podem não ter características de uma rede complexa.
+
+Elas permitem modelar problemas como, Progressão de epidemias, Migração e Influência Política, compreendendo ampla diversidade de assuntos.
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+## Grafo
+
+Um grafo é uma das possíveis representações de uma rede complexa, porém nem todo grafo tem características de rede complexa. Um grafo é uma representação matemática das conexões existentes entre vértices e arestas. Isso pode variar desde um único vértice e nenhuma aresta para um grafo trivial, até milhares ou milhões de elementos em um único grafo.
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Rede Social
+
+Redes sociais são redes formadas por indivíduos (ou algo que possa ser individualizado) com algum grau d erelacionamento. Quando pensamos em redes sociais, automaticamente nos vêm à mente as redes de relacionamentos como **Facebook**, **Twitter**, **Google**, etc., o que não está incorreto. Porém o conceito de redes sociais é muito mais abrangente. 
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::

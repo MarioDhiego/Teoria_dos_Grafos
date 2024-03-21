@@ -1,0 +1,59 @@
+```{=html}
+<style>
+body{text-align: justify}
+</style>
+```
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+# Modelos de Redes Complexas 
+## Introdução
+ 
+O estudo das redes complexas evoluiu dos simples grafos, passando por modelos de redes aletórias e modelo de ligação preferencial, e incorporando o fenômeno de mundo pequeno. tais modelo são de grande importância para a compreensão da topologia das redes complexas, a comparação de métricas e atributos que possibilitem sua análise.  
+
+
+
+## Modelo de Redes Complexas Erdos-Rényi
+
+Paul Erdos, cujos trabalhos relacionados à matemática foram comparados à grandiosidade de Euler, tendo mais 1.500 artigos até sua morte, criou juntamente com Alfréd Rényi um modelo de construção de redes complexas com ligações aleatórias entre os vértices.
+
+No modelo, dois vértices aleatórios são selecionados como candidatos; então, em uma analogia ao jogo de dados, é sorteado um número entre 1 e 6; se este número for igual a 6, é estabelecida uma conexão entre os dois vértices; caso seja diferente, outros vértices são sorteados e o processo se repete até que todos os vértices tenham sido explorados.  
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Modelo de Redes Complexas Barabási-Albert
+
+Albert-László Barabási e Réka Albert desenvolveram um algoritmo gerador de redes complexas que se baseia no grau dos vértices para determinar a probabilidade com que uma nova conexão será adicionada a um determinado vértice. Também conhecido como modelo de anexação preferencial ou modelo de ligação preferencial, este modelo gera grafos em que a distribuição de graus segue uma lei de potência.
+
+No modelo proposto, os vértices com maior número de conexões têm mais probabilidade de receber novas conexões que os vértices com poucas ou nenhuma conexão. Essa característica é propícia para o surgimento de **hubs na rede**.
+
+Esse fenômeno é também conhecido como **rich-get-richer**, ou seja, os ricos ficam mais ricos. À medida que a rede recebe novos vértices, a probabilidade de eles se conectarem aos que já têm um número grande de ligações é maior do que para aqueles com poucas, privilegiando dessa forma os que já são bem-sucedidos. Este modelo de rede também é conhecido como **scale-free**, ou redes sem escala. 
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+
+## Modelo proposto por Watts e Strogatz
+
+Duncan J. watts e Steven H. Strogatz propuseram um método para a criação de redes complexas aleatórias com características do fenômeno do mundo pequeno. Este modelo de redes se caracteriza pela presença de clusters (grupos) e por caminhos entre os vértices.
+
+Este modelo de rede tem similaridade com o modelo proposto por Erdos e Rényi, mas se diferencia por gerar tríades - grupos de três vértices em que todos estão conectados -, fazendo com que o coeficiente de clusterização desde modelo sela maior. As redes formadas segundo o modelo de Watts-Strogatz são mais próximas das redes do mundo real, emulando suas propriedades.
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::

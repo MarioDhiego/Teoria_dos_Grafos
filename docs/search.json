@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Teoria dos Grafos",
+    "section": "",
+    "text": "Prefácio\nAnálise de Redes Sociais vem ganhando crescente atenção nos últimos anos, especialmente com a adoção em massa do uso de smartphones e dispositivos móveis conectados à internet. Dia e Noite as pessoas têm usado cada vez mais ferramentas para se comunicar e interagir das mais variada formas."
+  },
+  {
+    "objectID": "intro.html#contextualização-histórica",
+    "href": "intro.html#contextualização-histórica",
+    "title": "1  Introdução a Teoria dos Grafos",
+    "section": "1.1 Contextualização Histórica",
+    "text": "1.1 Contextualização Histórica\nA teoria dos grafos é um ramo da matemática que estuda as estruturas conhecidas como grafos. Leonhard Euler, um brilhante matemático, publicou e, 1736 um artigo relacionado à resolução do problema das sete pontes de Konigsberg. Embora Eulernão tenha utilizado uma abordagem computacional para a resolução do problema, ele estabeleceu a base da teoria que deu origem ao estudo dos grafos e das redes complexas.\nAo estudar e análise de redes sociais, você irá se deparar com diversos termos relacionados ao tema, um mar vasto de materiais formulados para a area de marketing e propaganda permeados de termos em inglês, um grande número de artigos, livros e tutoriais da área da computação igualmente carregados de termos, nomes de algritmos, modelos de rede e conceitos matemáticos."
+  },
+  {
+    "objectID": "intro.html#rede-complexa",
+    "href": "intro.html#rede-complexa",
+    "title": "1  Introdução a Teoria dos Grafos",
+    "section": "1.2 Rede Complexa",
+    "text": "1.2 Rede Complexa\nUma rede complexa é caracterizada pela presença de elementos não triviais. È uma distribuição de graus dos vértices que comumente segue uma lei de potência e tem a presença de grupos de vértices fortemente conectados formando clusters de vértices.\nRedes complexas podem apresentar dados de diversas áreas, tais como biologia, neurociência, química e também redes sociais. O termo rede complexa será utilizado em diversos momento nesta apostila. È importante compreender que nem toda rede complexa é uma rede social, e que redes sociais que representam grupos pequenos de indivíduos podem não ter características de uma rede complexa.\nElas permitem modelar problemas como, Progressão de epidemias, Migração e Influência Política, compreendendo ampla diversidade de assuntos."
+  },
+  {
+    "objectID": "intro.html#grafo",
+    "href": "intro.html#grafo",
+    "title": "1  Introdução a Teoria dos Grafos",
+    "section": "1.3 Grafo",
+    "text": "1.3 Grafo\nUm grafo é uma das possíveis representações de uma rede complexa, porém nem todo grafo tem características de rede complexa. Um grafo é uma representação matemática das conexões existentes entre vértices e arestas. Isso pode variar desde um único vértice e nenhuma aresta para um grafo trivial, até milhares ou milhões de elementos em um único grafo."
+  },
+  {
+    "objectID": "intro.html#rede-social",
+    "href": "intro.html#rede-social",
+    "title": "1  Introdução a Teoria dos Grafos",
+    "section": "1.4 Rede Social",
+    "text": "1.4 Rede Social\nRedes sociais são redes formadas por indivíduos (ou algo que possa ser individualizado) com algum grau d erelacionamento. Quando pensamos em redes sociais, automaticamente nos vêm à mente as redes de relacionamentos como Facebook, Twitter, Google, etc., o que não está incorreto. Porém o conceito de redes sociais é muito mais abrangente."
+  },
+  {
+    "objectID": "summary.html#introdução",
+    "href": "summary.html#introdução",
+    "title": "2  Modelos de Redes Complexas",
+    "section": "2.1 Introdução",
+    "text": "2.1 Introdução\nO estudo das redes complexas evoluiu dos simples grafos, passando por modelos de redes aletórias e modelo de ligação preferencial, e incorporando o fenômeno de mundo pequeno. tais modelo são de grande importância para a compreensão da topologia das redes complexas, a comparação de métricas e atributos que possibilitem sua análise."
+  },
+  {
+    "objectID": "summary.html#modelo-de-redes-complexas-erdos-rényi",
+    "href": "summary.html#modelo-de-redes-complexas-erdos-rényi",
+    "title": "2  Modelos de Redes Complexas",
+    "section": "2.2 Modelo de Redes Complexas Erdos-Rényi",
+    "text": "2.2 Modelo de Redes Complexas Erdos-Rényi\nPaul Erdos, cujos trabalhos relacionados à matemática foram comparados à grandiosidade de Euler, tendo mais 1.500 artigos até sua morte, criou juntamente com Alfréd Rényi um modelo de construção de redes complexas com ligações aleatórias entre os vértices.\nNo modelo, dois vértices aleatórios são selecionados como candidatos; então, em uma analogia ao jogo de dados, é sorteado um número entre 1 e 6; se este número for igual a 6, é estabelecida uma conexão entre os dois vértices; caso seja diferente, outros vértices são sorteados e o processo se repete até que todos os vértices tenham sido explorados."
+  },
+  {
+    "objectID": "summary.html#modelo-de-redes-complexas-barabási-albert",
+    "href": "summary.html#modelo-de-redes-complexas-barabási-albert",
+    "title": "2  Modelos de Redes Complexas",
+    "section": "2.3 Modelo de Redes Complexas Barabási-Albert",
+    "text": "2.3 Modelo de Redes Complexas Barabási-Albert\nAlbert-László Barabási e Réka Albert desenvolveram um algoritmo gerador de redes complexas que se baseia no grau dos vértices para determinar a probabilidade com que uma nova conexão será adicionada a um determinado vértice. Também conhecido como modelo de anexação preferencial ou modelo de ligação preferencial, este modelo gera grafos em que a distribuição de graus segue uma lei de potência.\nNo modelo proposto, os vértices com maior número de conexões têm mais probabilidade de receber novas conexões que os vértices com poucas ou nenhuma conexão. Essa característica é propícia para o surgimento de hubs na rede.\nEsse fenômeno é também conhecido como rich-get-richer, ou seja, os ricos ficam mais ricos. À medida que a rede recebe novos vértices, a probabilidade de eles se conectarem aos que já têm um número grande de ligações é maior do que para aqueles com poucas, privilegiando dessa forma os que já são bem-sucedidos. Este modelo de rede também é conhecido como scale-free, ou redes sem escala."
+  },
+  {
+    "objectID": "summary.html#modelo-proposto-por-watts-e-strogatz",
+    "href": "summary.html#modelo-proposto-por-watts-e-strogatz",
+    "title": "2  Modelos de Redes Complexas",
+    "section": "2.4 Modelo proposto por Watts e Strogatz",
+    "text": "2.4 Modelo proposto por Watts e Strogatz\nDuncan J. watts e Steven H. Strogatz propuseram um método para a criação de redes complexas aleatórias com características do fenômeno do mundo pequeno. Este modelo de redes se caracteriza pela presença de clusters (grupos) e por caminhos entre os vértices.\nEste modelo de rede tem similaridade com o modelo proposto por Erdos e Rényi, mas se diferencia por gerar tríades - grupos de três vértices em que todos estão conectados -, fazendo com que o coeficiente de clusterização desde modelo sela maior. As redes formadas segundo o modelo de Watts-Strogatz são mais próximas das redes do mundo real, emulando suas propriedades."
+  }
+]

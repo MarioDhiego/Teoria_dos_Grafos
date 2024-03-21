@@ -1,0 +1,25 @@
+```{=html}
+<style>
+body{text-align: justify}
+</style>
+```
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+
+
+# Prefácio {.unnumbered}
+
+Análise de Redes Sociais vem ganhando crescente atenção nos últimos anos, especialmente com a adoção em massa do uso de smartphones e dispositivos móveis conectados à internet. Dia e Noite as pessoas têm usado cada vez mais ferramentas para se comunicar e interagir das mais variada formas. 
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
