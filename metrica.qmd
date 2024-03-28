@@ -82,6 +82,103 @@ A densidade de ummgrafo é dada pela relação entre sua ordem e seu tamanho. A 
 Existem diversas medidas de centralidade para os vértices, e elas procuram avaliar a importância de um determinado vértice em relação ao grafo. Em análise de redes sociais, é importante conhecer os nós centrais da rede, pois são estes que mais influenciam a propagação de informação. Medidas de centralidade também são importantes para determinar o fluxo em redes de transporte, mercado financeiro, dentre muitas outras aplicações.
 
 
+### Centralidade de Grau
+
+
+A centralidade de grau de um vértice é dada em relação ao número de vértices do grafo que estão conectados aqueles vértice em particular. A centralidade de grau mede também a proximidade de um vértice em relação aos demais. Vértices centrais também são importantes em termos de mediação.
+
+
+
+### Centralidade de Proximidade
+
+A centralidade de proxiomidade, ou **closenes centrality**, é uma medida que avalia o quão próximo aos demais vértices da rede um determinado vértice está. È possível calcular esta métrica por meio da soma das distâncias geoésicas em relação a todos os demais vértices da rede. Desse modo, quanto mais central for um vértice, menos saltos serão necessários para chegar aos demais nós da rede a partir desse vértice.
+
+Para calcular o valor da centralidade de proximidade para um vértice, pode-se utilizar a seguinte equação:
+
+$$ C_{c} = \frac{n-1}{\sum_{j=1}^{n} d(i,j)}  $$
+
+Em que $C_{c}$ é o valor de closenes centrality, $n$ representa o número de vértices no grafo,  $\sum_{j=1}^{n}$ representa a soma de todas as distâncias para todos os vértices e $d(i,j)$ é o número de caminhos mais curtos que liga os vértices $i$ e $j$.
+
+
+### Centralidade de Intermediação
+
+A centralidade de intermediação, ou **betweennes centrality**, é uma medida de centralidade baseada no número de caminhos mínimos entre vértices que passam por um determinado ponto da rede. Quanto mais central for um vértice, mais caminho mínimo passarão por ele.
+
+
+O valor varia entre 0 (caso seja retirado, nada se altere na rede) e 1 (alto nível de centralidade entre pares na rede). È possível calcular a centralidade de intermediação de um vértice por meio da seguinte equação:
+
+
+$$ C_{b}(v) = \sum \frac{\theta_{ij}(v)}{\theta_{ij}}$$
+
+Em que  $C_{b}(v)$ é o grau de centralidade, $\theta_{ij}(v)$ é o número de caminhos mínimos entre os vértices $i$ e $j$ que passam pelo vértice $v$, e $\theta_{ij}$ representa o número de todos os caminhos mínimos entre $i$ e $j$.
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Modularidade 
+
+Em redes complexas, frequentemente é possível observar organizações similares a comunidade ou agrupamentos, também chamado de **clusters** - grupos de vértices que apresentam alto grau de similaridade ou que estão próximos uns aos outros dentro da rede. 
+
+
+Existem diversas maneiras de identificar comunidade em redes complexas, estratégias divisavas de particionamento da rede e medida de modularidade objetiva para avaliar a qualidade dessas partições. 
+
+Para calcular a modularidade, avaliamos as conexões entre os vértices por meio da seguinte equação:
+
+$$Q = \frac{1}{4m} \sum_{i,j}(A_{ij} - \frac{k_{i}k_{j}}{2m})$$
+
+Em que $Q$ é a medida de modularidade; o termo $\frac{1}{4m}$ foi convencionado por razões de normalização; $A_{ij}$ representa a matriz de adjacências; e o termo $\frac{k_{i}k_{j}}{2m}$ calcula a probabilidade de uma aresta estar entre os vértices $i$ e $j$, sendo que $m$ representa o número total de arestas no grafo, $k_{i}$ representa o grau do vértice $i$ e $k_{j}$ representa o grau do vértice $j$.
+
+
+
+::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+:::
+
+
+## Coeficiente de Aglomeração
+
+Coeficiente de aglomeração, ou **clustering coefficient**, é uma métrica utilizada para avaliar a presença de clusters em uma rede complexa. Cluster é um grupo de vértices fortemente conectado. Os clusters em redes sociais são análogos a comunidades, e frequentemente esses grupos são compostos de indivíduos que compartilham interesses ou características.
+
+Existem dois coeficiente de aglomeração: o coeficiente de aglomeração local, que mede esse coeficiente para um vértice específico da rede, e o coeficiente de aglomeração global, que mede a propensão de uma rede em apresentar grupos ou comunidades. 
+
+
+### Coefciente de Aglomeração Local
+
+O coeficiente de aglomeração local mede a propensão que um vértice específico e seus vizinhos têm para formar um clique. Clique é um subgrafo conexo, ou seja, todos os vértices estão conectados entre si. O clique mais comum em redes é um trio. È possível calcular o coeficiente de aglomeração local por meio da seguinte equação:
+
+
+$$ C_{i} = \frac{2n_{i}}{k_{i}(k_{i}-1)}$$
+
+Em que $C_{i}$ é o coeficiente de aglomeração local para o vértice $i$, $n_{i}$ representa o número de conexões, arestas que estão conectadas ligando os $k_{i}$ vértices vizinhos de $i$ até este vértice.
+
+
+### Coefciente de Aglomeração Global
+
+O coefciente de aglomeração global mede a propensão de uma rede em apresentar grupos ou comunidades. Seu cálculo é baseado no número de trios conectados presentes na rede. Por um trio, entende-se o conjunto de três vértices conectados entre si, formando um triângulo. Esse valor pode ser medido utilizando a seguinte equação:
+
+$$ C = \frac{3 \times  \ Nº \ de \ Triângulo \ no \ grafo}{ Nº \ de \ Trios \ Conectados \ no \ Grafo}$$
+
+Em que trio conectado é um trio de vértices constituídos por um nó central, ligado aos outros dois; os vértices de acompanhamento são não ordenados. A equação contra a fração de trios conectados que, na verdade, formam triângulos; o fator de três indica que cada triângulo corresponde a três trios.
+
+
+### Coefciente de Aglomeração Médio
+
+È a média do coefciente de agruipamento local de todos os vértices da rede. Esta métrica de rede ajuda a avaliar a qual modelo de rede um grafo se assemelha. Redes de mundo pequeno devem apresentar um coeficiente de aglomeração médio maior que um grafo aleatório com o mesmo número de vértices. Este coeficiente pode ser calaculado por meio da seguinte equação:
+
+$$ C = \frac{1}{N}\sum_{i}C_{i}$$
+
+Em que $N$ representa o número de vértices na rede $C_{i}$ representa o coeficiente de aglomeração local de cada um dos vértices do grafo.
+
+
+
+
+
+
 
 
 

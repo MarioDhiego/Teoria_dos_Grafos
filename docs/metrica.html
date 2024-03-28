@@ -128,6 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 }</script>
 <script async="" src="https://hypothes.is/embed.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -224,7 +225,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#diâmetro" id="toc-diâmetro" class="nav-link" data-scroll-target="#diâmetro"><span class="toc-section-number">3.4</span>  Diâmetro</a></li>
   <li><a href="#grau-de-um-vértice" id="toc-grau-de-um-vértice" class="nav-link" data-scroll-target="#grau-de-um-vértice"><span class="toc-section-number">3.5</span>  Grau de um Vértice</a></li>
   <li><a href="#densidade" id="toc-densidade" class="nav-link" data-scroll-target="#densidade"><span class="toc-section-number">3.6</span>  Densidade</a></li>
-  <li><a href="#centralidade" id="toc-centralidade" class="nav-link" data-scroll-target="#centralidade"><span class="toc-section-number">3.7</span>  Centralidade</a></li>
+  <li><a href="#centralidade" id="toc-centralidade" class="nav-link" data-scroll-target="#centralidade"><span class="toc-section-number">3.7</span>  Centralidade</a>
+  <ul class="collapse">
+  <li><a href="#centralidade-de-grau" id="toc-centralidade-de-grau" class="nav-link" data-scroll-target="#centralidade-de-grau"><span class="toc-section-number">3.7.1</span>  Centralidade de Grau</a></li>
+  <li><a href="#centralidade-de-proximidade" id="toc-centralidade-de-proximidade" class="nav-link" data-scroll-target="#centralidade-de-proximidade"><span class="toc-section-number">3.7.2</span>  Centralidade de Proximidade</a></li>
+  <li><a href="#centralidade-de-intermediação" id="toc-centralidade-de-intermediação" class="nav-link" data-scroll-target="#centralidade-de-intermediação"><span class="toc-section-number">3.7.3</span>  Centralidade de Intermediação</a></li>
+  </ul></li>
+  <li><a href="#modularidade" id="toc-modularidade" class="nav-link" data-scroll-target="#modularidade"><span class="toc-section-number">3.8</span>  Modularidade</a></li>
+  <li><a href="#coeficiente-de-aglomeração" id="toc-coeficiente-de-aglomeração" class="nav-link" data-scroll-target="#coeficiente-de-aglomeração"><span class="toc-section-number">3.9</span>  Coeficiente de Aglomeração</a>
+  <ul class="collapse">
+  <li><a href="#coefciente-de-aglomeração-local" id="toc-coefciente-de-aglomeração-local" class="nav-link" data-scroll-target="#coefciente-de-aglomeração-local"><span class="toc-section-number">3.9.1</span>  Coefciente de Aglomeração Local</a></li>
+  <li><a href="#coefciente-de-aglomeração-global" id="toc-coefciente-de-aglomeração-global" class="nav-link" data-scroll-target="#coefciente-de-aglomeração-global"><span class="toc-section-number">3.9.2</span>  Coefciente de Aglomeração Global</a></li>
+  <li><a href="#coefciente-de-aglomeração-médio" id="toc-coefciente-de-aglomeração-médio" class="nav-link" data-scroll-target="#coefciente-de-aglomeração-médio"><span class="toc-section-number">3.9.3</span>  Coefciente de Aglomeração Médio</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/MarioDhiego/Teoria_dos_Grafos/edit/main/book/metrica.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/MarioDhiego/Teoria_dos_Grafos/issues/new" class="toc-action">Report an issue</a></p><p><a href="https://github.com/MarioDhiego/Teoria_dos_Grafos/blob/main/book/metrica.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -311,6 +324,64 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="centralidade" class="level2" data-number="3.7">
 <h2 data-number="3.7" class="anchored" data-anchor-id="centralidade"><span class="header-section-number">3.7</span> Centralidade</h2>
 <p>Existem diversas medidas de centralidade para os vértices, e elas procuram avaliar a importância de um determinado vértice em relação ao grafo. Em análise de redes sociais, é importante conhecer os nós centrais da rede, pois são estes que mais influenciam a propagação de informação. Medidas de centralidade também são importantes para determinar o fluxo em redes de transporte, mercado financeiro, dentre muitas outras aplicações.</p>
+<section id="centralidade-de-grau" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="centralidade-de-grau"><span class="header-section-number">3.7.1</span> Centralidade de Grau</h3>
+<p>A centralidade de grau de um vértice é dada em relação ao número de vértices do grafo que estão conectados aqueles vértice em particular. A centralidade de grau mede também a proximidade de um vértice em relação aos demais. Vértices centrais também são importantes em termos de mediação.</p>
+</section>
+<section id="centralidade-de-proximidade" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="centralidade-de-proximidade"><span class="header-section-number">3.7.2</span> Centralidade de Proximidade</h3>
+<p>A centralidade de proxiomidade, ou <strong>closenes centrality</strong>, é uma medida que avalia o quão próximo aos demais vértices da rede um determinado vértice está. È possível calcular esta métrica por meio da soma das distâncias geoésicas em relação a todos os demais vértices da rede. Desse modo, quanto mais central for um vértice, menos saltos serão necessários para chegar aos demais nós da rede a partir desse vértice.</p>
+<p>Para calcular o valor da centralidade de proximidade para um vértice, pode-se utilizar a seguinte equação:</p>
+<p><span class="math display">\[ C_{c} = \frac{n-1}{\sum_{j=1}^{n} d(i,j)}  \]</span></p>
+<p>Em que <span class="math inline">\(C_{c}\)</span> é o valor de closenes centrality, <span class="math inline">\(n\)</span> representa o número de vértices no grafo, <span class="math inline">\(\sum_{j=1}^{n}\)</span> representa a soma de todas as distâncias para todos os vértices e <span class="math inline">\(d(i,j)\)</span> é o número de caminhos mais curtos que liga os vértices <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span>.</p>
+</section>
+<section id="centralidade-de-intermediação" class="level3" data-number="3.7.3">
+<h3 data-number="3.7.3" class="anchored" data-anchor-id="centralidade-de-intermediação"><span class="header-section-number">3.7.3</span> Centralidade de Intermediação</h3>
+<p>A centralidade de intermediação, ou <strong>betweennes centrality</strong>, é uma medida de centralidade baseada no número de caminhos mínimos entre vértices que passam por um determinado ponto da rede. Quanto mais central for um vértice, mais caminho mínimo passarão por ele.</p>
+<p>O valor varia entre 0 (caso seja retirado, nada se altere na rede) e 1 (alto nível de centralidade entre pares na rede). È possível calcular a centralidade de intermediação de um vértice por meio da seguinte equação:</p>
+<p><span class="math display">\[ C_{b}(v) = \sum \frac{\theta_{ij}(v)}{\theta_{ij}}\]</span></p>
+<p>Em que <span class="math inline">\(C_{b}(v)\)</span> é o grau de centralidade, <span class="math inline">\(\theta_{ij}(v)\)</span> é o número de caminhos mínimos entre os vértices <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span> que passam pelo vértice <span class="math inline">\(v\)</span>, e <span class="math inline">\(\theta_{ij}\)</span> representa o número de todos os caminhos mínimos entre <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span>.</p>
+<div class="progress">
+<div class="progress-bar" style="width: 100%;">
+
+</div>
+</div>
+</section>
+</section>
+<section id="modularidade" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="modularidade"><span class="header-section-number">3.8</span> Modularidade</h2>
+<p>Em redes complexas, frequentemente é possível observar organizações similares a comunidade ou agrupamentos, também chamado de <strong>clusters</strong> - grupos de vértices que apresentam alto grau de similaridade ou que estão próximos uns aos outros dentro da rede.</p>
+<p>Existem diversas maneiras de identificar comunidade em redes complexas, estratégias divisavas de particionamento da rede e medida de modularidade objetiva para avaliar a qualidade dessas partições.</p>
+<p>Para calcular a modularidade, avaliamos as conexões entre os vértices por meio da seguinte equação:</p>
+<p><span class="math display">\[Q = \frac{1}{4m} \sum_{i,j}(A_{ij} - \frac{k_{i}k_{j}}{2m})\]</span></p>
+<p>Em que <span class="math inline">\(Q\)</span> é a medida de modularidade; o termo <span class="math inline">\(\frac{1}{4m}\)</span> foi convencionado por razões de normalização; <span class="math inline">\(A_{ij}\)</span> representa a matriz de adjacências; e o termo <span class="math inline">\(\frac{k_{i}k_{j}}{2m}\)</span> calcula a probabilidade de uma aresta estar entre os vértices <span class="math inline">\(i\)</span> e <span class="math inline">\(j\)</span>, sendo que <span class="math inline">\(m\)</span> representa o número total de arestas no grafo, <span class="math inline">\(k_{i}\)</span> representa o grau do vértice <span class="math inline">\(i\)</span> e <span class="math inline">\(k_{j}\)</span> representa o grau do vértice <span class="math inline">\(j\)</span>.</p>
+<div class="progress">
+<div class="progress-bar" style="width: 100%;">
+
+</div>
+</div>
+</section>
+<section id="coeficiente-de-aglomeração" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="coeficiente-de-aglomeração"><span class="header-section-number">3.9</span> Coeficiente de Aglomeração</h2>
+<p>Coeficiente de aglomeração, ou <strong>clustering coefficient</strong>, é uma métrica utilizada para avaliar a presença de clusters em uma rede complexa. Cluster é um grupo de vértices fortemente conectado. Os clusters em redes sociais são análogos a comunidades, e frequentemente esses grupos são compostos de indivíduos que compartilham interesses ou características.</p>
+<p>Existem dois coeficiente de aglomeração: o coeficiente de aglomeração local, que mede esse coeficiente para um vértice específico da rede, e o coeficiente de aglomeração global, que mede a propensão de uma rede em apresentar grupos ou comunidades.</p>
+<section id="coefciente-de-aglomeração-local" class="level3" data-number="3.9.1">
+<h3 data-number="3.9.1" class="anchored" data-anchor-id="coefciente-de-aglomeração-local"><span class="header-section-number">3.9.1</span> Coefciente de Aglomeração Local</h3>
+<p>O coeficiente de aglomeração local mede a propensão que um vértice específico e seus vizinhos têm para formar um clique. Clique é um subgrafo conexo, ou seja, todos os vértices estão conectados entre si. O clique mais comum em redes é um trio. È possível calcular o coeficiente de aglomeração local por meio da seguinte equação:</p>
+<p><span class="math display">\[ C_{i} = \frac{2n_{i}}{k_{i}(k_{i}-1)}\]</span></p>
+<p>Em que <span class="math inline">\(C_{i}\)</span> é o coeficiente de aglomeração local para o vértice <span class="math inline">\(i\)</span>, <span class="math inline">\(n_{i}\)</span> representa o número de conexões, arestas que estão conectadas ligando os <span class="math inline">\(k_{i}\)</span> vértices vizinhos de <span class="math inline">\(i\)</span> até este vértice.</p>
+</section>
+<section id="coefciente-de-aglomeração-global" class="level3" data-number="3.9.2">
+<h3 data-number="3.9.2" class="anchored" data-anchor-id="coefciente-de-aglomeração-global"><span class="header-section-number">3.9.2</span> Coefciente de Aglomeração Global</h3>
+<p>O coefciente de aglomeração global mede a propensão de uma rede em apresentar grupos ou comunidades. Seu cálculo é baseado no número de trios conectados presentes na rede. Por um trio, entende-se o conjunto de três vértices conectados entre si, formando um triângulo. Esse valor pode ser medido utilizando a seguinte equação:</p>
+<p><span class="math display">\[ C = \frac{3 \times  \ Nº \ de \ Triângulo \ no \ grafo}{ Nº \ de \ Trios \ Conectados \ no \ Grafo}\]</span></p>
+<p>Em que trio conectado é um trio de vértices constituídos por um nó central, ligado aos outros dois; os vértices de acompanhamento são não ordenados. A equação contra a fração de trios conectados que, na verdade, formam triângulos; o fator de três indica que cada triângulo corresponde a três trios.</p>
+</section>
+<section id="coefciente-de-aglomeração-médio" class="level3" data-number="3.9.3">
+<h3 data-number="3.9.3" class="anchored" data-anchor-id="coefciente-de-aglomeração-médio"><span class="header-section-number">3.9.3</span> Coefciente de Aglomeração Médio</h3>
+<p>È a média do coefciente de agruipamento local de todos os vértices da rede. Esta métrica de rede ajuda a avaliar a qual modelo de rede um grafo se assemelha. Redes de mundo pequeno devem apresentar um coeficiente de aglomeração médio maior que um grafo aleatório com o mesmo número de vértices. Este coeficiente pode ser calaculado por meio da seguinte equação:</p>
+<p><span class="math display">\[ C = \frac{1}{N}\sum_{i}C_{i}\]</span></p>
+<p>Em que <span class="math inline">\(N\)</span> representa o número de vértices na rede <span class="math inline">\(C_{i}\)</span> representa o coeficiente de aglomeração local de cada um dos vértices do grafo.</p>
 <div class="progress">
 <div class="progress-bar" style="width: 100%;">
 
@@ -320,6 +391,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -718,13 +790,110 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Existem diversas medidas de centralidade para os vértices, e elas procuram avaliar a importância de um determinado vértice em relação ao grafo. Em análise de redes sociais, é importante conhecer os nós centrais da rede, pois são estes que mais influenciam a propagação de informação. Medidas de centralidade também são importantes para determinar o fluxo em redes de transporte, mercado financeiro, dentre muitas outras aplicações.</span>
 <span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="fu">### Centralidade de Grau</span></span>
 <span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>::: progress</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>::: {.progress-bar style="width: 100%;"}</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>A centralidade de grau de um vértice é dada em relação ao número de vértices do grafo que estão conectados aqueles vértice em particular. A centralidade de grau mede também a proximidade de um vértice em relação aos demais. Vértices centrais também são importantes em termos de mediação.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Centralidade de Proximidade</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>A centralidade de proxiomidade, ou **closenes centrality**, é uma medida que avalia o quão próximo aos demais vértices da rede um determinado vértice está. È possível calcular esta métrica por meio da soma das distâncias geoésicas em relação a todos os demais vértices da rede. Desse modo, quanto mais central for um vértice, menos saltos serão necessários para chegar aos demais nós da rede a partir desse vértice.</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>Para calcular o valor da centralidade de proximidade para um vértice, pode-se utilizar a seguinte equação:</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>$$ C_{c} = \frac{n-1}{\sum_{j=1}^{n} d(i,j)}  $$</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>Em que $C_{c}$ é o valor de closenes centrality, $n$ representa o número de vértices no grafo,  $\sum_{j=1}^{n}$ representa a soma de todas as distâncias para todos os vértices e $d(i,j)$ é o número de caminhos mais curtos que liga os vértices $i$ e $j$.</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### Centralidade de Intermediação</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>A centralidade de intermediação, ou **betweennes centrality**, é uma medida de centralidade baseada no número de caminhos mínimos entre vértices que passam por um determinado ponto da rede. Quanto mais central for um vértice, mais caminho mínimo passarão por ele.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>O valor varia entre 0 (caso seja retirado, nada se altere na rede) e 1 (alto nível de centralidade entre pares na rede). È possível calcular a centralidade de intermediação de um vértice por meio da seguinte equação:</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>$$ C_{b}(v) = \sum \frac{\theta_{ij}(v)}{\theta_{ij}}$$</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>Em que  $C_{b}(v)$ é o grau de centralidade, $\theta_{ij}(v)$ é o número de caminhos mínimos entre os vértices $i$ e $j$ que passam pelo vértice $v$, e $\theta_{ij}$ representa o número de todos os caminhos mínimos entre $i$ e $j$.</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>::: progress</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>::: {.progress-bar style="width: 100%;"}</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="fu">## Modularidade </span></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>Em redes complexas, frequentemente é possível observar organizações similares a comunidade ou agrupamentos, também chamado de **clusters** - grupos de vértices que apresentam alto grau de similaridade ou que estão próximos uns aos outros dentro da rede. </span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>Existem diversas maneiras de identificar comunidade em redes complexas, estratégias divisavas de particionamento da rede e medida de modularidade objetiva para avaliar a qualidade dessas partições. </span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>Para calcular a modularidade, avaliamos as conexões entre os vértices por meio da seguinte equação:</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>$$Q = \frac{1}{4m} \sum_{i,j}(A_{ij} - \frac{k_{i}k_{j}}{2m})$$</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>Em que $Q$ é a medida de modularidade; o termo $\frac{1}{4m}$ foi convencionado por razões de normalização; $A_{ij}$ representa a matriz de adjacências; e o termo $\frac{k_{i}k_{j}}{2m}$ calcula a probabilidade de uma aresta estar entre os vértices $i$ e $j$, sendo que $m$ representa o número total de arestas no grafo, $k_{i}$ representa o grau do vértice $i$ e $k_{j}$ representa o grau do vértice $j$.</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>::: progress</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>::: {.progress-bar style="width: 100%;"}</span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## Coeficiente de Aglomeração</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>Coeficiente de aglomeração, ou **clustering coefficient**, é uma métrica utilizada para avaliar a presença de clusters em uma rede complexa. Cluster é um grupo de vértices fortemente conectado. Os clusters em redes sociais são análogos a comunidades, e frequentemente esses grupos são compostos de indivíduos que compartilham interesses ou características.</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>Existem dois coeficiente de aglomeração: o coeficiente de aglomeração local, que mede esse coeficiente para um vértice específico da rede, e o coeficiente de aglomeração global, que mede a propensão de uma rede em apresentar grupos ou comunidades. </span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="fu">### Coefciente de Aglomeração Local</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>O coeficiente de aglomeração local mede a propensão que um vértice específico e seus vizinhos têm para formar um clique. Clique é um subgrafo conexo, ou seja, todos os vértices estão conectados entre si. O clique mais comum em redes é um trio. È possível calcular o coeficiente de aglomeração local por meio da seguinte equação:</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>$$ C_{i} = \frac{2n_{i}}{k_{i}(k_{i}-1)}$$</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>Em que $C_{i}$ é o coeficiente de aglomeração local para o vértice $i$, $n_{i}$ representa o número de conexões, arestas que estão conectadas ligando os $k_{i}$ vértices vizinhos de $i$ até este vértice.</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="fu">### Coefciente de Aglomeração Global</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>O coefciente de aglomeração global mede a propensão de uma rede em apresentar grupos ou comunidades. Seu cálculo é baseado no número de trios conectados presentes na rede. Por um trio, entende-se o conjunto de três vértices conectados entre si, formando um triângulo. Esse valor pode ser medido utilizando a seguinte equação:</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>$$ C = \frac{3 \times  \ Nº \ de \ Triângulo \ no \ grafo}{ Nº \ de \ Trios \ Conectados \ no \ Grafo}$$</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>Em que trio conectado é um trio de vértices constituídos por um nó central, ligado aos outros dois; os vértices de acompanhamento são não ordenados. A equação contra a fração de trios conectados que, na verdade, formam triângulos; o fator de três indica que cada triângulo corresponde a três trios.</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="fu">### Coefciente de Aglomeração Médio</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>È a média do coefciente de agruipamento local de todos os vértices da rede. Esta métrica de rede ajuda a avaliar a qual modelo de rede um grafo se assemelha. Redes de mundo pequeno devem apresentar um coeficiente de aglomeração médio maior que um grafo aleatório com o mesmo número de vértices. Este coeficiente pode ser calaculado por meio da seguinte equação:</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>$$ C = \frac{1}{N}\sum_{i}C_{i}$$</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>Em que $N$ representa o número de vértices na rede $C_{i}$ representa o coeficiente de aglomeração local de cada um dos vértices do grafo.</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>::: progress</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>::: {.progress-bar style="width: 100%;"}</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
